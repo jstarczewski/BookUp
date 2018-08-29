@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/clakelogoalpha"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:text=" allNote v1.0\n cLake studio 2017"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+            android:fontFamily="sans-serif-thin"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="back"
+        android:layout_marginBottom="59dp"
+        android:id="@+id/textView2" />
+
+    <CheckBox
+        android:text="shrink notes"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxNotes"
+        android:layout_marginTop="22dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:text="shrink books"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBoxBooks"
+
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/checkBoxNotes"
+        android:layout_alignStart="@+id/checkBoxNotes" />
+
+    <TextView
+        android:text="longClick on book/note to edit, longClick to save, \n tap to delve into"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:layout_below="@+id/checkBoxBooks"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:id="@+id/textView3" />
+</RelativeLayout>
